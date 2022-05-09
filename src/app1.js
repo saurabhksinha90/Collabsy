@@ -19,7 +19,7 @@ app.get('/transcript_old',(req, res) => {
 var options = {
   "method": "GET",
   "headers": {
-    "Ocp-Apim-Subscription-Key": "263b459802cc4084864a331f5aa3ddb7",
+    "Ocp-Apim-Subscription-Key": "<<KEY>>",
    "Content-Type": "application/json"
   }
 };
@@ -52,7 +52,7 @@ res.send(text);
 app.get('/email', (req, res) => {
 	
 	const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey('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');
+sgMail.setApiKey('<<KEY>>');
 			
 			let length1= 16;
   
@@ -75,7 +75,7 @@ let fetch = require("node-fetch");
 var options = {
   "method": "GET",
   "headers": {
-    "Ocp-Apim-Subscription-Key": "263b459802cc4084864a331f5aa3ddb7",
+    "Ocp-Apim-Subscription-Key": "<<KEY>>",
    "Content-Type": "application/json"
   }
 };
